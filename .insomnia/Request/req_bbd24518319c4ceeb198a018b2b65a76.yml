@@ -1,0 +1,41 @@
+_id: req_bbd24518319c4ceeb198a018b2b65a76
+type: Request
+parentId: fld_81001ebeff1b4ef2be5194ceecd033f6
+modified: 1673243466268
+created: 1673243466268
+url: "{{URL}}/client/list"
+name: list
+description: ""
+method: POST
+body:
+  params:
+    - type: text
+      name: name
+      disabled: false
+      value: ""
+    - type: text
+      name: email
+      disabled: false
+      value: ""
+    - type: text
+      name: status
+      disabled: false
+      value: ""
+  mimeType: multipart/form-data
+parameters: []
+headers:
+  - name: Accept
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1673243466268
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

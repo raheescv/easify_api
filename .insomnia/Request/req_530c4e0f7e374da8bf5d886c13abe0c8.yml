@@ -1,0 +1,53 @@
+_id: req_530c4e0f7e374da8bf5d886c13abe0c8
+type: Request
+parentId: fld_3b724869b8cb4df7a21113f487273d8d
+modified: 1673243466272
+created: 1673243466272
+url: "{{URL}}/video/edit"
+name: edit
+description: ""
+method: POST
+body:
+  params:
+    - type: text
+      name: video_url
+      disabled: false
+      value: " required"
+    - type: text
+      name: title
+      disabled: false
+      value: " required"
+    - type: text
+      name: description
+      disabled: false
+      value: " required"
+    - type: text
+      name: priority
+      disabled: false
+      value: " required"
+    - type: text
+      name: type
+      disabled: false
+      value: "2"
+    - type: text
+      name: id
+      disabled: false
+      value: "2"
+  mimeType: multipart/form-data
+parameters: []
+headers:
+  - name: Accept
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1673243466272
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

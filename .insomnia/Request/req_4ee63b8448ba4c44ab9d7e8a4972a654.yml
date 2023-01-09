@@ -1,0 +1,41 @@
+_id: req_4ee63b8448ba4c44ab9d7e8a4972a654
+type: Request
+parentId: fld_d8c800e8926a41b19f5bbabffbffa8ec
+modified: 1673243732071
+created: 1673243732071
+url: "{{URL}}/client/edit"
+name: edit
+description: ""
+method: POST
+body:
+  params:
+    - type: text
+      name: name
+      disabled: false
+      value: " required123"
+    - type: text
+      name: email
+      disabled: false
+      value: " required@gmail.com"
+    - type: text
+      name: id
+      disabled: false
+      value: "2"
+  mimeType: multipart/form-data
+parameters: []
+headers:
+  - name: Accept
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1673243732071
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

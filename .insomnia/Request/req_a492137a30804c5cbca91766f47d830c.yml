@@ -1,0 +1,53 @@
+_id: req_a492137a30804c5cbca91766f47d830c
+type: Request
+parentId: fld_92e70d611b56430285903f8dfdc7ac9e
+modified: 1673243466264
+created: 1673243466264
+url: "{{URL}}/software-inquiry"
+name: software-inquiry
+description: ""
+method: POST
+body:
+  params:
+    - type: text
+      name: name
+      disabled: false
+      value: "12"
+    - type: text
+      name: phone
+      disabled: false
+      value: "123"
+    - type: text
+      name: email
+      disabled: false
+      value: rahees@iocd.com
+    - type: text
+      name: product[0]
+      disabled: false
+      value: CRM
+    - type: text
+      name: product[1]
+      disabled: false
+      value: Investor Portal
+    - type: text
+      name: product[2]
+      disabled: false
+      value: Phone System
+    - type: text
+      name: product[3]
+      disabled: false
+      value: Marketing Portal
+  mimeType: multipart/form-data
+parameters: []
+headers:
+  - name: Accept
+    value: application/json
+authentication: {}
+metaSortKey: -1673243466264
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,33 @@
+_id: req_34d708b8e5a54d9d9883d667dddd9c93
+type: Request
+parentId: fld_81001ebeff1b4ef2be5194ceecd033f6
+modified: 1673243466267
+created: 1673243466267
+url: "{{URL}}/client/status-change"
+name: status-change
+description: ""
+method: POST
+body:
+  params:
+    - type: text
+      name: status
+      disabled: false
+      value: Approved
+    - type: text
+      name: id
+      disabled: false
+      value: "1"
+  mimeType: multipart/form-data
+parameters: []
+headers:
+  - name: Accept
+    value: application/json
+authentication: {}
+metaSortKey: -1673243466267
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

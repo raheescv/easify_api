@@ -1,0 +1,37 @@
+_id: req_557fdb59815c4476bf6dddeaf8eca2ff
+type: Request
+parentId: fld_d8c800e8926a41b19f5bbabffbffa8ec
+modified: 1673243732071
+created: 1673243732071
+url: "{{URL}}/client/register"
+name: register
+description: ""
+method: POST
+body:
+  params:
+    - type: text
+      name: name
+      disabled: false
+      value: " required"
+    - type: text
+      name: email
+      disabled: false
+      value: " required@gmail.com112"
+    - type: text
+      name: password
+      disabled: false
+      value: " required"
+  mimeType: multipart/form-data
+parameters: []
+headers:
+  - name: Accept
+    value: application/json
+authentication: {}
+metaSortKey: -1673243732071
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

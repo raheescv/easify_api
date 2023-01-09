@@ -1,0 +1,49 @@
+_id: req_d4efbb1e5e2f404f9553715da3b70e27
+type: Request
+parentId: fld_8b47f4025dfc455f957cae9e30629f91
+modified: 1673243732075
+created: 1673243732075
+url: "{{URL}}/video/store"
+name: store
+description: ""
+method: POST
+body:
+  params:
+    - type: text
+      name: video_url
+      disabled: false
+      value: " required"
+    - type: text
+      name: title
+      disabled: false
+      value: " required"
+    - type: text
+      name: description
+      disabled: false
+      value: " required"
+    - type: text
+      name: priority
+      disabled: false
+      value: " required"
+    - type: text
+      name: type
+      disabled: false
+      value: "222"
+  mimeType: multipart/form-data
+parameters: []
+headers:
+  - name: Accept
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1673243732075
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

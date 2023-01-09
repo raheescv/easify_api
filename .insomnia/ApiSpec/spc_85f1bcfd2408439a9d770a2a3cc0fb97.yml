@@ -1,0 +1,1957 @@
+_id: spc_85f1bcfd2408439a9d770a2a3cc0fb97
+type: ApiSpec
+parentId: wrk_ba6b7839eb0f4e82b5882f7a79872305
+modified: 1673243693576
+created: 1673243445747
+fileName: My Document
+contents: >-
+  {
+  	"info": {
+  		"_postman_id": "e33ee11e-8141-4aee-a6c4-e9a2893b5fa5",
+  		"name": "easify",
+  		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+  		"_exporter_id": "2215081"
+  	},
+  	"item": [
+  		{
+  			"name": "Auth",
+  			"item": [
+  				{
+  					"name": "login",
+  					"request": {
+  						"auth": {
+  							"type": "noauth"
+  						},
+  						"method": "POST",
+  						"header": [
+  							{
+  								"key": "Accept",
+  								"value": "application/json",
+  								"type": "text"
+  							}
+  						],
+  						"body": {
+  							"mode": "formdata",
+  							"formdata": [
+  								{
+  									"key": "email",
+  									"value": "admin@iocod.com",
+  									"type": "text"
+  								},
+  								{
+  									"key": "password",
+  									"value": "admin@iocod.com",
+  									"type": "text"
+  								}
+  							]
+  						},
+  						"url": {
+  							"raw": "{{URL}}/login",
+  							"host": [
+  								"{{URL}}"
+  							],
+  							"path": [
+  								"login"
+  							]
+  						}
+  					},
+  					"response": []
+  				}
+  			]
+  		},
+  		{
+  			"name": "Video",
+  			"item": [
+  				{
+  					"name": "store",
+  					"request": {
+  						"auth": {
+  							"type": "bearer",
+  							"bearer": [
+  								{
+  									"key": "token",
+  									"value": "{{token}}",
+  									"type": "string"
+  								}
+  							]
+  						},
+  						"method": "POST",
+  						"header": [
+  							{
+  								"key": "Accept",
+  								"value": "application/json",
+  								"type": "text"
+  							}
+  						],
+  						"body": {
+  							"mode": "formdata",
+  							"formdata": [
+  								{
+  									"key": "video_url",
+  									"value": " required",
+  									"type": "text"
+  								},
+  								{
+  									"key": "title",
+  									"value": " required",
+  									"type": "text"
+  								},
+  								{
+  									"key": "description",
+  									"value": " required",
+  									"type": "text"
+  								},
+  								{
+  									"key": "priority",
+  									"value": " required",
+  									"type": "text"
+  								},
+  								{
+  									"key": "type",
+  									"value": "222",
+  									"description": "1) training 2)Public",
+  									"type": "text"
+  								}
+  							]
+  						},
+  						"url": {
+  							"raw": "{{URL}}/video/store",
+  							"host": [
+  								"{{URL}}"
+  							],
+  							"path": [
+  								"video",
+  								"store"
+  							]
+  						}
+  					},
+  					"response": [
+  						{
+  							"name": "store",
+  							"originalRequest": {
+  								"method": "POST",
+  								"header": [
+  									{
+  										"key": "Accept",
+  										"value": "application/json",
+  										"type": "text"
+  									}
+  								],
+  								"body": {
+  									"mode": "formdata",
+  									"formdata": [
+  										{
+  											"key": "video_url",
+  											"value": " required",
+  											"type": "text"
+  										},
+  										{
+  											"key": "title",
+  											"value": " required",
+  											"type": "text"
+  										},
+  										{
+  											"key": "description",
+  											"value": " required",
+  											"type": "text"
+  										},
+  										{
+  											"key": "priority",
+  											"value": " required",
+  											"type": "text"
+  										},
+  										{
+  											"key": "type",
+  											"value": "222",
+  											"description": "1) training 2)Public",
+  											"type": "text"
+  										}
+  									]
+  								},
+  								"url": {
+  									"raw": "{{URL}}/video/store",
+  									"host": [
+  										"{{URL}}"
+  									],
+  									"path": [
+  										"video",
+  										"store"
+  									]
+  								}
+  							},
+  							"status": "OK",
+  							"code": 200,
+  							"_postman_previewlanguage": "json",
+  							"header": [
+  								{
+  									"key": "Server",
+  									"value": "nginx/1.21.6"
+  								},
+  								{
+  									"key": "Content-Type",
+  									"value": "application/json"
+  								},
+  								{
+  									"key": "Transfer-Encoding",
+  									"value": "chunked"
+  								},
+  								{
+  									"key": "Connection",
+  									"value": "keep-alive"
+  								},
+  								{
+  									"key": "Vary",
+  									"value": "Accept-Encoding"
+  								},
+  								{
+  									"key": "X-Powered-By",
+  									"value": "PHP/8.1.9"
+  								},
+  								{
+  									"key": "Cache-Control",
+  									"value": "no-cache, private"
+  								},
+  								{
+  									"key": "Date",
+  									"value": "Tue, 03 Jan 2023 11:22:37 GMT"
+  								},
+  								{
+  									"key": "X-RateLimit-Limit",
+  									"value": "60"
+  								},
+  								{
+  									"key": "X-RateLimit-Remaining",
+  									"value": "57"
+  								},
+  								{
+  									"key": "phpdebugbar-id",
+  									"value": "X45aa3f5ba1f5572ad08da45cfa8d4aec"
+  								},
+  								{
+  									"key": "Access-Control-Allow-Origin",
+  									"value": "*"
+  								},
+  								{
+  									"key": "Content-Encoding",
+  									"value": "gzip"
+  								}
+  							],
+  							"cookie": [],
+  							"body": "{\n    \"success\": true,\n    \"data\": [],\n    \"message\": \"successfully created\"\n}"
+  						}
+  					]
+  				},
+  				{
+  					"name": "edit",
+  					"request": {
+  						"auth": {
+  							"type": "bearer",
+  							"bearer": [
+  								{
+  									"key": "token",
+  									"value": "{{token}}",
+  									"type": "string"
+  								}
+  							]
+  						},
+  						"method": "POST",
+  						"header": [
+  							{
+  								"key": "Accept",
+  								"value": "application/json",
+  								"type": "text"
+  							}
+  						],
+  						"body": {
+  							"mode": "formdata",
+  							"formdata": [
+  								{
+  									"key": "video_url",
+  									"value": " required",
+  									"type": "text"
+  								},
+  								{
+  									"key": "title",
+  									"value": " required",
+  									"type": "text"
+  								},
+  								{
+  									"key": "description",
+  									"value": " required",
+  									"type": "text"
+  								},
+  								{
+  									"key": "priority",
+  									"value": " required",
+  									"type": "text"
+  								},
+  								{
+  									"key": "type",
+  									"value": "2",
+  									"description": "1) training 2)Public",
+  									"type": "text"
+  								},
+  								{
+  									"key": "id",
+  									"value": "2",
+  									"type": "text"
+  								}
+  							]
+  						},
+  						"url": {
+  							"raw": "{{URL}}/video/edit",
+  							"host": [
+  								"{{URL}}"
+  							],
+  							"path": [
+  								"video",
+  								"edit"
+  							]
+  						}
+  					},
+  					"response": [
+  						{
+  							"name": "edit",
+  							"originalRequest": {
+  								"method": "POST",
+  								"header": [
+  									{
+  										"key": "Accept",
+  										"value": "application/json",
+  										"type": "text"
+  									}
+  								],
+  								"body": {
+  									"mode": "formdata",
+  									"formdata": [
+  										{
+  											"key": "video_url",
+  											"value": " required",
+  											"type": "text"
+  										},
+  										{
+  											"key": "title",
+  											"value": " required",
+  											"type": "text"
+  										},
+  										{
+  											"key": "description",
+  											"value": " required",
+  											"type": "text"
+  										},
+  										{
+  											"key": "priority",
+  											"value": " required",
+  											"type": "text"
+  										},
+  										{
+  											"key": "type",
+  											"value": "2",
+  											"description": "1) training 2)Public",
+  											"type": "text"
+  										},
+  										{
+  											"key": "id",
+  											"value": "1",
+  											"type": "text"
+  										}
+  									]
+  								},
+  								"url": {
+  									"raw": "{{URL}}/video/edit",
+  									"host": [
+  										"{{URL}}"
+  									],
+  									"path": [
+  										"video",
+  										"edit"
+  									]
+  								}
+  							},
+  							"status": "OK",
+  							"code": 200,
+  							"_postman_previewlanguage": "json",
+  							"header": [
+  								{
+  									"key": "Server",
+  									"value": "nginx/1.21.6"
+  								},
+  								{
+  									"key": "Content-Type",
+  									"value": "application/json"
+  								},
+  								{
+  									"key": "Transfer-Encoding",
+  									"value": "chunked"
+  								},
+  								{
+  									"key": "Connection",
+  									"value": "keep-alive"
+  								},
+  								{
+  									"key": "Vary",
+  									"value": "Accept-Encoding"
+  								},
+  								{
+  									"key": "X-Powered-By",
+  									"value": "PHP/8.1.9"
+  								},
+  								{
+  									"key": "Cache-Control",
+  									"value": "no-cache, private"
+  								},
+  								{
+  									"key": "Date",
+  									"value": "Tue, 03 Jan 2023 11:52:51 GMT"
+  								},
+  								{
+  									"key": "X-RateLimit-Limit",
+  									"value": "60"
+  								},
+  								{
+  									"key": "X-RateLimit-Remaining",
+  									"value": "58"
+  								},
+  								{
+  									"key": "phpdebugbar-id",
+  									"value": "Xd281d99e6d1b105bdd1cf464900cb8c7"
+  								},
+  								{
+  									"key": "Access-Control-Allow-Origin",
+  									"value": "*"
+  								},
+  								{
+  									"key": "Content-Encoding",
+  									"value": "gzip"
+  								}
+  							],
+  							"cookie": [],
+  							"body": "{\n    \"success\": true,\n    \"data\": [],\n    \"message\": \"Video Updated Successfully\"\n}"
+  						}
+  					]
+  				},
+  				{
+  					"name": "delete",
+  					"request": {
+  						"auth": {
+  							"type": "bearer",
+  							"bearer": [
+  								{
+  									"key": "token",
+  									"value": "{{token}}",
+  									"type": "string"
+  								}
+  							]
+  						},
+  						"method": "POST",
+  						"header": [
+  							{
+  								"key": "Accept",
+  								"value": "application/json",
+  								"type": "text"
+  							}
+  						],
+  						"body": {
+  							"mode": "formdata",
+  							"formdata": [
+  								{
+  									"key": "id",
+  									"value": "2",
+  									"type": "text"
+  								}
+  							]
+  						},
+  						"url": {
+  							"raw": "{{URL}}/video/delete",
+  							"host": [
+  								"{{URL}}"
+  							],
+  							"path": [
+  								"video",
+  								"delete"
+  							]
+  						}
+  					},
+  					"response": [
+  						{
+  							"name": "delete",
+  							"originalRequest": {
+  								"method": "POST",
+  								"header": [
+  									{
+  										"key": "Accept",
+  										"value": "application/json",
+  										"type": "text"
+  									}
+  								],
+  								"body": {
+  									"mode": "formdata",
+  									"formdata": [
+  										{
+  											"key": "id",
+  											"value": "1",
+  											"type": "text"
+  										}
+  									]
+  								},
+  								"url": {
+  									"raw": "{{URL}}/video/delete",
+  									"host": [
+  										"{{URL}}"
+  									],
+  									"path": [
+  										"video",
+  										"delete"
+  									]
+  								}
+  							},
+  							"status": "OK",
+  							"code": 200,
+  							"_postman_previewlanguage": "json",
+  							"header": [
+  								{
+  									"key": "Server",
+  									"value": "nginx/1.21.6"
+  								},
+  								{
+  									"key": "Content-Type",
+  									"value": "application/json"
+  								},
+  								{
+  									"key": "Transfer-Encoding",
+  									"value": "chunked"
+  								},
+  								{
+  									"key": "Connection",
+  									"value": "keep-alive"
+  								},
+  								{
+  									"key": "Vary",
+  									"value": "Accept-Encoding"
+  								},
+  								{
+  									"key": "X-Powered-By",
+  									"value": "PHP/8.1.9"
+  								},
+  								{
+  									"key": "Cache-Control",
+  									"value": "no-cache, private"
+  								},
+  								{
+  									"key": "Date",
+  									"value": "Tue, 03 Jan 2023 11:58:27 GMT"
+  								},
+  								{
+  									"key": "X-RateLimit-Limit",
+  									"value": "60"
+  								},
+  								{
+  									"key": "X-RateLimit-Remaining",
+  									"value": "58"
+  								},
+  								{
+  									"key": "phpdebugbar-id",
+  									"value": "Xa9838a5972a61653947c67047698594c"
+  								},
+  								{
+  									"key": "Access-Control-Allow-Origin",
+  									"value": "*"
+  								},
+  								{
+  									"key": "Content-Encoding",
+  									"value": "gzip"
+  								}
+  							],
+  							"cookie": [],
+  							"body": "{\n    \"success\": true,\n    \"data\": [],\n    \"message\": \"Video Deleted Successfully\"\n}"
+  						}
+  					]
+  				},
+  				{
+  					"name": "list",
+  					"request": {
+  						"method": "POST",
+  						"header": [
+  							{
+  								"key": "Accept",
+  								"value": "application/json",
+  								"type": "text"
+  							}
+  						],
+  						"body": {
+  							"mode": "formdata",
+  							"formdata": [
+  								{
+  									"key": "title",
+  									"value": "required",
+  									"type": "text"
+  								},
+  								{
+  									"key": "type",
+  									"value": "1",
+  									"description": "2) Public 1)Training",
+  									"type": "text"
+  								}
+  							]
+  						},
+  						"url": {
+  							"raw": "{{URL}}/video/list",
+  							"host": [
+  								"{{URL}}"
+  							],
+  							"path": [
+  								"video",
+  								"list"
+  							]
+  						}
+  					},
+  					"response": [
+  						{
+  							"name": "list",
+  							"originalRequest": {
+  								"method": "POST",
+  								"header": [
+  									{
+  										"key": "Accept",
+  										"value": "application/json",
+  										"type": "text"
+  									}
+  								],
+  								"body": {
+  									"mode": "formdata",
+  									"formdata": [
+  										{
+  											"key": "title",
+  											"value": "required",
+  											"type": "text"
+  										},
+  										{
+  											"key": "type",
+  											"value": "1",
+  											"description": "2) Public 1)Training",
+  											"type": "text"
+  										}
+  									]
+  								},
+  								"url": {
+  									"raw": "{{URL}}/video/list",
+  									"host": [
+  										"{{URL}}"
+  									],
+  									"path": [
+  										"video",
+  										"list"
+  									]
+  								}
+  							},
+  							"status": "OK",
+  							"code": 200,
+  							"_postman_previewlanguage": "json",
+  							"header": [
+  								{
+  									"key": "Server",
+  									"value": "nginx/1.21.6"
+  								},
+  								{
+  									"key": "Content-Type",
+  									"value": "application/json"
+  								},
+  								{
+  									"key": "Transfer-Encoding",
+  									"value": "chunked"
+  								},
+  								{
+  									"key": "Connection",
+  									"value": "keep-alive"
+  								},
+  								{
+  									"key": "Vary",
+  									"value": "Accept-Encoding"
+  								},
+  								{
+  									"key": "X-Powered-By",
+  									"value": "PHP/8.1.9"
+  								},
+  								{
+  									"key": "Cache-Control",
+  									"value": "no-cache, private"
+  								},
+  								{
+  									"key": "Date",
+  									"value": "Tue, 03 Jan 2023 12:13:36 GMT"
+  								},
+  								{
+  									"key": "X-RateLimit-Limit",
+  									"value": "60"
+  								},
+  								{
+  									"key": "X-RateLimit-Remaining",
+  									"value": "56"
+  								},
+  								{
+  									"key": "phpdebugbar-id",
+  									"value": "X337e78b850448b95add4e9d90298cf51"
+  								},
+  								{
+  									"key": "Access-Control-Allow-Origin",
+  									"value": "*"
+  								},
+  								{
+  									"key": "Content-Encoding",
+  									"value": "gzip"
+  								}
+  							],
+  							"cookie": [],
+  							"body": "{\n    \"success\": true,\n    \"data\": [\n        {\n            \"id\": 2,\n            \"title\": \"required\",\n            \"description\": \"required\",\n            \"video_url\": \"required\",\n            \"priority\": \"required\",\n            \"type\": 1,\n            \"type_name\": \"Training\"\n        },\n        {\n            \"id\": 3,\n            \"title\": \"required\",\n            \"description\": \"required\",\n            \"video_url\": \"required\",\n            \"priority\": \"required\",\n            \"type\": 1,\n            \"type_name\": \"Training\"\n        }\n    ],\n    \"message\": \"Video Fetched Successfully\"\n}"
+  						}
+  					]
+  				}
+  			]
+  		},
+  		{
+  			"name": "Client",
+  			"item": [
+  				{
+  					"name": "store",
+  					"request": {
+  						"auth": {
+  							"type": "bearer",
+  							"bearer": [
+  								{
+  									"key": "token",
+  									"value": "{{token}}",
+  									"type": "string"
+  								}
+  							]
+  						},
+  						"method": "POST",
+  						"header": [
+  							{
+  								"key": "Accept",
+  								"value": "application/json",
+  								"type": "text"
+  							}
+  						],
+  						"body": {
+  							"mode": "formdata",
+  							"formdata": [
+  								{
+  									"key": "name",
+  									"value": " required",
+  									"type": "text"
+  								},
+  								{
+  									"key": "email",
+  									"value": " required@gmail.com111",
+  									"type": "text"
+  								},
+  								{
+  									"key": "password",
+  									"value": " required",
+  									"type": "text"
+  								}
+  							]
+  						},
+  						"url": {
+  							"raw": "{{URL}}/client/store",
+  							"host": [
+  								"{{URL}}"
+  							],
+  							"path": [
+  								"client",
+  								"store"
+  							]
+  						}
+  					},
+  					"response": [
+  						{
+  							"name": "store",
+  							"originalRequest": {
+  								"method": "POST",
+  								"header": [
+  									{
+  										"key": "Accept",
+  										"value": "application/json",
+  										"type": "text"
+  									}
+  								],
+  								"body": {
+  									"mode": "formdata",
+  									"formdata": [
+  										{
+  											"key": "name",
+  											"value": " required",
+  											"type": "text"
+  										},
+  										{
+  											"key": "email",
+  											"value": " required@gmail.com",
+  											"type": "text"
+  										},
+  										{
+  											"key": "password",
+  											"value": " required",
+  											"type": "text"
+  										}
+  									]
+  								},
+  								"url": {
+  									"raw": "{{URL}}/client/store",
+  									"host": [
+  										"{{URL}}"
+  									],
+  									"path": [
+  										"client",
+  										"store"
+  									]
+  								}
+  							},
+  							"status": "OK",
+  							"code": 200,
+  							"_postman_previewlanguage": "json",
+  							"header": [
+  								{
+  									"key": "Server",
+  									"value": "nginx/1.21.6"
+  								},
+  								{
+  									"key": "Content-Type",
+  									"value": "application/json"
+  								},
+  								{
+  									"key": "Transfer-Encoding",
+  									"value": "chunked"
+  								},
+  								{
+  									"key": "Connection",
+  									"value": "keep-alive"
+  								},
+  								{
+  									"key": "Vary",
+  									"value": "Accept-Encoding"
+  								},
+  								{
+  									"key": "X-Powered-By",
+  									"value": "PHP/8.1.9"
+  								},
+  								{
+  									"key": "Cache-Control",
+  									"value": "no-cache, private"
+  								},
+  								{
+  									"key": "Date",
+  									"value": "Tue, 03 Jan 2023 12:47:17 GMT"
+  								},
+  								{
+  									"key": "X-RateLimit-Limit",
+  									"value": "60"
+  								},
+  								{
+  									"key": "X-RateLimit-Remaining",
+  									"value": "58"
+  								},
+  								{
+  									"key": "phpdebugbar-id",
+  									"value": "X15b89d3b644b41940758daf58fab0338"
+  								},
+  								{
+  									"key": "Access-Control-Allow-Origin",
+  									"value": "*"
+  								},
+  								{
+  									"key": "Content-Encoding",
+  									"value": "gzip"
+  								}
+  							],
+  							"cookie": [],
+  							"body": "{\n    \"success\": true,\n    \"data\": [],\n    \"message\": \"Client Created Successfully\"\n}"
+  						}
+  					]
+  				},
+  				{
+  					"name": "register",
+  					"request": {
+  						"method": "POST",
+  						"header": [
+  							{
+  								"key": "Accept",
+  								"value": "application/json",
+  								"type": "text"
+  							}
+  						],
+  						"body": {
+  							"mode": "formdata",
+  							"formdata": [
+  								{
+  									"key": "name",
+  									"value": " required",
+  									"type": "text"
+  								},
+  								{
+  									"key": "email",
+  									"value": " required@gmail.com112",
+  									"type": "text"
+  								},
+  								{
+  									"key": "password",
+  									"value": " required",
+  									"type": "text"
+  								}
+  							]
+  						},
+  						"url": {
+  							"raw": "{{URL}}/client/register",
+  							"host": [
+  								"{{URL}}"
+  							],
+  							"path": [
+  								"client",
+  								"register"
+  							]
+  						}
+  					},
+  					"response": [
+  						{
+  							"name": "store",
+  							"originalRequest": {
+  								"method": "POST",
+  								"header": [
+  									{
+  										"key": "Accept",
+  										"value": "application/json",
+  										"type": "text"
+  									}
+  								],
+  								"body": {
+  									"mode": "formdata",
+  									"formdata": [
+  										{
+  											"key": "name",
+  											"value": " required",
+  											"type": "text"
+  										},
+  										{
+  											"key": "email",
+  											"value": " required@gmail.com",
+  											"type": "text"
+  										},
+  										{
+  											"key": "password",
+  											"value": " required",
+  											"type": "text"
+  										}
+  									]
+  								},
+  								"url": {
+  									"raw": "{{URL}}/client/store",
+  									"host": [
+  										"{{URL}}"
+  									],
+  									"path": [
+  										"client",
+  										"store"
+  									]
+  								}
+  							},
+  							"status": "OK",
+  							"code": 200,
+  							"_postman_previewlanguage": "json",
+  							"header": [
+  								{
+  									"key": "Server",
+  									"value": "nginx/1.21.6"
+  								},
+  								{
+  									"key": "Content-Type",
+  									"value": "application/json"
+  								},
+  								{
+  									"key": "Transfer-Encoding",
+  									"value": "chunked"
+  								},
+  								{
+  									"key": "Connection",
+  									"value": "keep-alive"
+  								},
+  								{
+  									"key": "Vary",
+  									"value": "Accept-Encoding"
+  								},
+  								{
+  									"key": "X-Powered-By",
+  									"value": "PHP/8.1.9"
+  								},
+  								{
+  									"key": "Cache-Control",
+  									"value": "no-cache, private"
+  								},
+  								{
+  									"key": "Date",
+  									"value": "Tue, 03 Jan 2023 12:47:17 GMT"
+  								},
+  								{
+  									"key": "X-RateLimit-Limit",
+  									"value": "60"
+  								},
+  								{
+  									"key": "X-RateLimit-Remaining",
+  									"value": "58"
+  								},
+  								{
+  									"key": "phpdebugbar-id",
+  									"value": "X15b89d3b644b41940758daf58fab0338"
+  								},
+  								{
+  									"key": "Access-Control-Allow-Origin",
+  									"value": "*"
+  								},
+  								{
+  									"key": "Content-Encoding",
+  									"value": "gzip"
+  								}
+  							],
+  							"cookie": [],
+  							"body": "{\n    \"success\": true,\n    \"data\": [],\n    \"message\": \"Client Created Successfully\"\n}"
+  						}
+  					]
+  				},
+  				{
+  					"name": "edit",
+  					"request": {
+  						"auth": {
+  							"type": "bearer",
+  							"bearer": [
+  								{
+  									"key": "token",
+  									"value": "{{token}}",
+  									"type": "string"
+  								}
+  							]
+  						},
+  						"method": "POST",
+  						"header": [
+  							{
+  								"key": "Accept",
+  								"value": "application/json",
+  								"type": "text"
+  							}
+  						],
+  						"body": {
+  							"mode": "formdata",
+  							"formdata": [
+  								{
+  									"key": "name",
+  									"value": " required123",
+  									"type": "text"
+  								},
+  								{
+  									"key": "email",
+  									"value": " required@gmail.com",
+  									"type": "text"
+  								},
+  								{
+  									"key": "id",
+  									"value": "2",
+  									"type": "text"
+  								}
+  							]
+  						},
+  						"url": {
+  							"raw": "{{URL}}/client/edit",
+  							"host": [
+  								"{{URL}}"
+  							],
+  							"path": [
+  								"client",
+  								"edit"
+  							]
+  						}
+  					},
+  					"response": [
+  						{
+  							"name": "edit",
+  							"originalRequest": {
+  								"method": "POST",
+  								"header": [
+  									{
+  										"key": "Accept",
+  										"value": "application/json",
+  										"type": "text"
+  									}
+  								],
+  								"body": {
+  									"mode": "formdata",
+  									"formdata": [
+  										{
+  											"key": "name",
+  											"value": " required123",
+  											"type": "text"
+  										},
+  										{
+  											"key": "email",
+  											"value": " required@gmail.com",
+  											"type": "text"
+  										},
+  										{
+  											"key": "id",
+  											"value": "2",
+  											"type": "text"
+  										}
+  									]
+  								},
+  								"url": {
+  									"raw": "{{URL}}/client/edit",
+  									"host": [
+  										"{{URL}}"
+  									],
+  									"path": [
+  										"client",
+  										"edit"
+  									]
+  								}
+  							},
+  							"status": "OK",
+  							"code": 200,
+  							"_postman_previewlanguage": "json",
+  							"header": [
+  								{
+  									"key": "Server",
+  									"value": "nginx/1.21.6"
+  								},
+  								{
+  									"key": "Content-Type",
+  									"value": "application/json"
+  								},
+  								{
+  									"key": "Transfer-Encoding",
+  									"value": "chunked"
+  								},
+  								{
+  									"key": "Connection",
+  									"value": "keep-alive"
+  								},
+  								{
+  									"key": "Vary",
+  									"value": "Accept-Encoding"
+  								},
+  								{
+  									"key": "X-Powered-By",
+  									"value": "PHP/8.1.9"
+  								},
+  								{
+  									"key": "Cache-Control",
+  									"value": "no-cache, private"
+  								},
+  								{
+  									"key": "Date",
+  									"value": "Tue, 03 Jan 2023 12:48:25 GMT"
+  								},
+  								{
+  									"key": "X-RateLimit-Limit",
+  									"value": "60"
+  								},
+  								{
+  									"key": "X-RateLimit-Remaining",
+  									"value": "59"
+  								},
+  								{
+  									"key": "phpdebugbar-id",
+  									"value": "X611d986f0d98272cfa66d586014a756a"
+  								},
+  								{
+  									"key": "Access-Control-Allow-Origin",
+  									"value": "*"
+  								},
+  								{
+  									"key": "Content-Encoding",
+  									"value": "gzip"
+  								}
+  							],
+  							"cookie": [],
+  							"body": "{\n    \"success\": true,\n    \"data\": [],\n    \"message\": \"Client Updated Successfully\"\n}"
+  						}
+  					]
+  				},
+  				{
+  					"name": "delete",
+  					"request": {
+  						"auth": {
+  							"type": "bearer",
+  							"bearer": [
+  								{
+  									"key": "token",
+  									"value": "{{token}}",
+  									"type": "string"
+  								}
+  							]
+  						},
+  						"method": "POST",
+  						"header": [
+  							{
+  								"key": "Accept",
+  								"value": "application/json",
+  								"type": "text"
+  							}
+  						],
+  						"body": {
+  							"mode": "formdata",
+  							"formdata": [
+  								{
+  									"key": "id",
+  									"value": "1",
+  									"type": "text"
+  								}
+  							]
+  						},
+  						"url": {
+  							"raw": "{{URL}}/client/delete",
+  							"host": [
+  								"{{URL}}"
+  							],
+  							"path": [
+  								"client",
+  								"delete"
+  							]
+  						}
+  					},
+  					"response": [
+  						{
+  							"name": "delete",
+  							"originalRequest": {
+  								"method": "POST",
+  								"header": [
+  									{
+  										"key": "Accept",
+  										"value": "application/json",
+  										"type": "text"
+  									}
+  								],
+  								"body": {
+  									"mode": "formdata",
+  									"formdata": [
+  										{
+  											"key": "id",
+  											"value": "1",
+  											"type": "text"
+  										}
+  									]
+  								},
+  								"url": {
+  									"raw": "{{URL}}/client/delete",
+  									"host": [
+  										"{{URL}}"
+  									],
+  									"path": [
+  										"client",
+  										"delete"
+  									]
+  								}
+  							},
+  							"status": "OK",
+  							"code": 200,
+  							"_postman_previewlanguage": "json",
+  							"header": [
+  								{
+  									"key": "Server",
+  									"value": "nginx/1.21.6"
+  								},
+  								{
+  									"key": "Content-Type",
+  									"value": "application/json"
+  								},
+  								{
+  									"key": "Transfer-Encoding",
+  									"value": "chunked"
+  								},
+  								{
+  									"key": "Connection",
+  									"value": "keep-alive"
+  								},
+  								{
+  									"key": "Vary",
+  									"value": "Accept-Encoding"
+  								},
+  								{
+  									"key": "X-Powered-By",
+  									"value": "PHP/8.1.9"
+  								},
+  								{
+  									"key": "Cache-Control",
+  									"value": "no-cache, private"
+  								},
+  								{
+  									"key": "Date",
+  									"value": "Tue, 03 Jan 2023 12:49:07 GMT"
+  								},
+  								{
+  									"key": "X-RateLimit-Limit",
+  									"value": "60"
+  								},
+  								{
+  									"key": "X-RateLimit-Remaining",
+  									"value": "58"
+  								},
+  								{
+  									"key": "phpdebugbar-id",
+  									"value": "X4f3b3d76031a9749363e6ad59055ee12"
+  								},
+  								{
+  									"key": "Access-Control-Allow-Origin",
+  									"value": "*"
+  								},
+  								{
+  									"key": "Content-Encoding",
+  									"value": "gzip"
+  								}
+  							],
+  							"cookie": [],
+  							"body": "{\n    \"success\": true,\n    \"data\": [],\n    \"message\": \"Client Deleted Successfully\"\n}"
+  						}
+  					]
+  				},
+  				{
+  					"name": "list",
+  					"request": {
+  						"auth": {
+  							"type": "bearer",
+  							"bearer": [
+  								{
+  									"key": "token",
+  									"value": "{{token}}",
+  									"type": "string"
+  								}
+  							]
+  						},
+  						"method": "POST",
+  						"header": [
+  							{
+  								"key": "Accept",
+  								"value": "application/json",
+  								"type": "text"
+  							}
+  						],
+  						"body": {
+  							"mode": "formdata",
+  							"formdata": [
+  								{
+  									"key": "name",
+  									"value": "",
+  									"type": "text"
+  								},
+  								{
+  									"key": "email",
+  									"value": "",
+  									"type": "text"
+  								},
+  								{
+  									"key": "status",
+  									"value": "",
+  									"type": "text"
+  								}
+  							]
+  						},
+  						"url": {
+  							"raw": "{{URL}}/client/list",
+  							"host": [
+  								"{{URL}}"
+  							],
+  							"path": [
+  								"client",
+  								"list"
+  							]
+  						}
+  					},
+  					"response": [
+  						{
+  							"name": "list",
+  							"originalRequest": {
+  								"method": "POST",
+  								"header": [
+  									{
+  										"key": "Accept",
+  										"value": "application/json",
+  										"type": "text"
+  									}
+  								],
+  								"body": {
+  									"mode": "formdata",
+  									"formdata": [
+  										{
+  											"key": "title",
+  											"value": "required",
+  											"type": "text"
+  										},
+  										{
+  											"key": "type",
+  											"value": "1",
+  											"description": "2) Public 1)Training",
+  											"type": "text"
+  										}
+  									]
+  								},
+  								"url": {
+  									"raw": "{{URL}}/video/list",
+  									"host": [
+  										"{{URL}}"
+  									],
+  									"path": [
+  										"video",
+  										"list"
+  									]
+  								}
+  							},
+  							"status": "OK",
+  							"code": 200,
+  							"_postman_previewlanguage": "json",
+  							"header": [
+  								{
+  									"key": "Server",
+  									"value": "nginx/1.21.6"
+  								},
+  								{
+  									"key": "Content-Type",
+  									"value": "application/json"
+  								},
+  								{
+  									"key": "Transfer-Encoding",
+  									"value": "chunked"
+  								},
+  								{
+  									"key": "Connection",
+  									"value": "keep-alive"
+  								},
+  								{
+  									"key": "Vary",
+  									"value": "Accept-Encoding"
+  								},
+  								{
+  									"key": "X-Powered-By",
+  									"value": "PHP/8.1.9"
+  								},
+  								{
+  									"key": "Cache-Control",
+  									"value": "no-cache, private"
+  								},
+  								{
+  									"key": "Date",
+  									"value": "Tue, 03 Jan 2023 12:13:36 GMT"
+  								},
+  								{
+  									"key": "X-RateLimit-Limit",
+  									"value": "60"
+  								},
+  								{
+  									"key": "X-RateLimit-Remaining",
+  									"value": "56"
+  								},
+  								{
+  									"key": "phpdebugbar-id",
+  									"value": "X337e78b850448b95add4e9d90298cf51"
+  								},
+  								{
+  									"key": "Access-Control-Allow-Origin",
+  									"value": "*"
+  								},
+  								{
+  									"key": "Content-Encoding",
+  									"value": "gzip"
+  								}
+  							],
+  							"cookie": [],
+  							"body": "{\n    \"success\": true,\n    \"data\": [\n        {\n            \"id\": 2,\n            \"title\": \"required\",\n            \"description\": \"required\",\n            \"video_url\": \"required\",\n            \"priority\": \"required\",\n            \"type\": 1,\n            \"type_name\": \"Training\"\n        },\n        {\n            \"id\": 3,\n            \"title\": \"required\",\n            \"description\": \"required\",\n            \"video_url\": \"required\",\n            \"priority\": \"required\",\n            \"type\": 1,\n            \"type_name\": \"Training\"\n        }\n    ],\n    \"message\": \"Video Fetched Successfully\"\n}"
+  						}
+  					]
+  				},
+  				{
+  					"name": "status-change",
+  					"request": {
+  						"method": "POST",
+  						"header": [
+  							{
+  								"key": "Accept",
+  								"value": "application/json",
+  								"type": "text"
+  							}
+  						],
+  						"body": {
+  							"mode": "formdata",
+  							"formdata": [
+  								{
+  									"key": "status",
+  									"value": "Approved",
+  									"type": "text"
+  								},
+  								{
+  									"key": "id",
+  									"value": "1",
+  									"type": "text"
+  								}
+  							]
+  						},
+  						"url": {
+  							"raw": "{{URL}}/client/status-change",
+  							"host": [
+  								"{{URL}}"
+  							],
+  							"path": [
+  								"client",
+  								"status-change"
+  							]
+  						}
+  					},
+  					"response": [
+  						{
+  							"name": "list",
+  							"originalRequest": {
+  								"method": "POST",
+  								"header": [
+  									{
+  										"key": "Accept",
+  										"value": "application/json",
+  										"type": "text"
+  									}
+  								],
+  								"body": {
+  									"mode": "formdata",
+  									"formdata": [
+  										{
+  											"key": "title",
+  											"value": "required",
+  											"type": "text"
+  										},
+  										{
+  											"key": "type",
+  											"value": "1",
+  											"description": "2) Public 1)Training",
+  											"type": "text"
+  										}
+  									]
+  								},
+  								"url": {
+  									"raw": "{{URL}}/video/list",
+  									"host": [
+  										"{{URL}}"
+  									],
+  									"path": [
+  										"video",
+  										"list"
+  									]
+  								}
+  							},
+  							"status": "OK",
+  							"code": 200,
+  							"_postman_previewlanguage": "json",
+  							"header": [
+  								{
+  									"key": "Server",
+  									"value": "nginx/1.21.6"
+  								},
+  								{
+  									"key": "Content-Type",
+  									"value": "application/json"
+  								},
+  								{
+  									"key": "Transfer-Encoding",
+  									"value": "chunked"
+  								},
+  								{
+  									"key": "Connection",
+  									"value": "keep-alive"
+  								},
+  								{
+  									"key": "Vary",
+  									"value": "Accept-Encoding"
+  								},
+  								{
+  									"key": "X-Powered-By",
+  									"value": "PHP/8.1.9"
+  								},
+  								{
+  									"key": "Cache-Control",
+  									"value": "no-cache, private"
+  								},
+  								{
+  									"key": "Date",
+  									"value": "Tue, 03 Jan 2023 12:13:36 GMT"
+  								},
+  								{
+  									"key": "X-RateLimit-Limit",
+  									"value": "60"
+  								},
+  								{
+  									"key": "X-RateLimit-Remaining",
+  									"value": "56"
+  								},
+  								{
+  									"key": "phpdebugbar-id",
+  									"value": "X337e78b850448b95add4e9d90298cf51"
+  								},
+  								{
+  									"key": "Access-Control-Allow-Origin",
+  									"value": "*"
+  								},
+  								{
+  									"key": "Content-Encoding",
+  									"value": "gzip"
+  								}
+  							],
+  							"cookie": [],
+  							"body": "{\n    \"success\": true,\n    \"data\": [\n        {\n            \"id\": 2,\n            \"title\": \"required\",\n            \"description\": \"required\",\n            \"video_url\": \"required\",\n            \"priority\": \"required\",\n            \"type\": 1,\n            \"type_name\": \"Training\"\n        },\n        {\n            \"id\": 3,\n            \"title\": \"required\",\n            \"description\": \"required\",\n            \"video_url\": \"required\",\n            \"priority\": \"required\",\n            \"type\": 1,\n            \"type_name\": \"Training\"\n        }\n    ],\n    \"message\": \"Video Fetched Successfully\"\n}"
+  						}
+  					]
+  				}
+  			]
+  		},
+  		{
+  			"name": "contact-us",
+  			"request": {
+  				"method": "POST",
+  				"header": [
+  					{
+  						"key": "Accept",
+  						"value": "application/json",
+  						"type": "text"
+  					}
+  				],
+  				"body": {
+  					"mode": "formdata",
+  					"formdata": [
+  						{
+  							"key": "name",
+  							"value": "12",
+  							"type": "text"
+  						},
+  						{
+  							"key": "phone",
+  							"value": "123",
+  							"type": "text"
+  						},
+  						{
+  							"key": "email",
+  							"value": "rahees@iocd.com",
+  							"type": "text"
+  						},
+  						{
+  							"key": "help",
+  							"value": "123",
+  							"type": "text"
+  						},
+  						{
+  							"key": "",
+  							"value": "123",
+  							"type": "text"
+  						}
+  					]
+  				},
+  				"url": {
+  					"raw": "{{URL}}/contact-us",
+  					"host": [
+  						"{{URL}}"
+  					],
+  					"path": [
+  						"contact-us"
+  					]
+  				}
+  			},
+  			"response": [
+  				{
+  					"name": "contact-us",
+  					"originalRequest": {
+  						"method": "POST",
+  						"header": [
+  							{
+  								"key": "Accept",
+  								"value": "application/json",
+  								"type": "text"
+  							}
+  						],
+  						"body": {
+  							"mode": "formdata",
+  							"formdata": [
+  								{
+  									"key": "name",
+  									"value": "12",
+  									"type": "text"
+  								},
+  								{
+  									"key": "phone",
+  									"value": "123",
+  									"type": "text"
+  								},
+  								{
+  									"key": "email",
+  									"value": "rahees@iocd.com",
+  									"type": "text"
+  								},
+  								{
+  									"key": "help",
+  									"value": "123",
+  									"type": "text"
+  								},
+  								{
+  									"key": "",
+  									"value": "123",
+  									"type": "text"
+  								}
+  							]
+  						},
+  						"url": {
+  							"raw": "{{URL}}/contact-us",
+  							"host": [
+  								"{{URL}}"
+  							],
+  							"path": [
+  								"contact-us"
+  							]
+  						}
+  					},
+  					"status": "OK",
+  					"code": 200,
+  					"_postman_previewlanguage": "json",
+  					"header": [
+  						{
+  							"key": "Server",
+  							"value": "nginx/1.21.6"
+  						},
+  						{
+  							"key": "Content-Type",
+  							"value": "application/json"
+  						},
+  						{
+  							"key": "Transfer-Encoding",
+  							"value": "chunked"
+  						},
+  						{
+  							"key": "Connection",
+  							"value": "keep-alive"
+  						},
+  						{
+  							"key": "Vary",
+  							"value": "Accept-Encoding"
+  						},
+  						{
+  							"key": "X-Powered-By",
+  							"value": "PHP/8.1.9"
+  						},
+  						{
+  							"key": "Cache-Control",
+  							"value": "no-cache, private"
+  						},
+  						{
+  							"key": "Date",
+  							"value": "Tue, 03 Jan 2023 09:23:35 GMT"
+  						},
+  						{
+  							"key": "X-RateLimit-Limit",
+  							"value": "60"
+  						},
+  						{
+  							"key": "X-RateLimit-Remaining",
+  							"value": "59"
+  						},
+  						{
+  							"key": "phpdebugbar-id",
+  							"value": "X5545ee5298be741319bac24f757cbbf1"
+  						},
+  						{
+  							"key": "Access-Control-Allow-Origin",
+  							"value": "*"
+  						},
+  						{
+  							"key": "Content-Encoding",
+  							"value": "gzip"
+  						}
+  					],
+  					"cookie": [],
+  					"body": "{\n    \"success\": true,\n    \"data\": [],\n    \"message\": \"Details submitted successfully! We’ll get back you shortly\"\n}"
+  				}
+  			]
+  		},
+  		{
+  			"name": "software-inquiry",
+  			"request": {
+  				"method": "POST",
+  				"header": [
+  					{
+  						"key": "Accept",
+  						"value": "application/json",
+  						"type": "text"
+  					}
+  				],
+  				"body": {
+  					"mode": "formdata",
+  					"formdata": [
+  						{
+  							"key": "name",
+  							"value": "12",
+  							"type": "text"
+  						},
+  						{
+  							"key": "phone",
+  							"value": "123",
+  							"type": "text"
+  						},
+  						{
+  							"key": "email",
+  							"value": "rahees@iocd.com",
+  							"type": "text"
+  						},
+  						{
+  							"key": "product[0]",
+  							"value": "CRM",
+  							"type": "text"
+  						},
+  						{
+  							"key": "product[1]",
+  							"value": "Investor Portal",
+  							"type": "text"
+  						},
+  						{
+  							"key": "product[2]",
+  							"value": "Phone System",
+  							"type": "text"
+  						},
+  						{
+  							"key": "product[3]",
+  							"value": "Marketing Portal",
+  							"type": "text"
+  						}
+  					]
+  				},
+  				"url": {
+  					"raw": "{{URL}}/software-inquiry",
+  					"host": [
+  						"{{URL}}"
+  					],
+  					"path": [
+  						"software-inquiry"
+  					]
+  				}
+  			},
+  			"response": [
+  				{
+  					"name": "software-inquiry",
+  					"originalRequest": {
+  						"method": "POST",
+  						"header": [
+  							{
+  								"key": "Accept",
+  								"value": "application/json",
+  								"type": "text"
+  							}
+  						],
+  						"body": {
+  							"mode": "formdata",
+  							"formdata": [
+  								{
+  									"key": "name",
+  									"value": "12",
+  									"type": "text"
+  								},
+  								{
+  									"key": "phone",
+  									"value": "123",
+  									"type": "text"
+  								},
+  								{
+  									"key": "email",
+  									"value": "rahees@iocd.com",
+  									"type": "text"
+  								},
+  								{
+  									"key": "product[0]",
+  									"value": "CRM",
+  									"type": "text"
+  								},
+  								{
+  									"key": "product[1]",
+  									"value": "Investor Portal",
+  									"type": "text"
+  								},
+  								{
+  									"key": "product[2]",
+  									"value": "Phone System",
+  									"type": "text"
+  								},
+  								{
+  									"key": "product[3]",
+  									"value": "Marketing Portal",
+  									"type": "text"
+  								}
+  							]
+  						},
+  						"url": {
+  							"raw": "{{URL}}/software-inquiry",
+  							"host": [
+  								"{{URL}}"
+  							],
+  							"path": [
+  								"software-inquiry"
+  							]
+  						}
+  					},
+  					"status": "OK",
+  					"code": 200,
+  					"_postman_previewlanguage": "json",
+  					"header": [
+  						{
+  							"key": "Server",
+  							"value": "nginx/1.21.6"
+  						},
+  						{
+  							"key": "Content-Type",
+  							"value": "application/json"
+  						},
+  						{
+  							"key": "Transfer-Encoding",
+  							"value": "chunked"
+  						},
+  						{
+  							"key": "Connection",
+  							"value": "keep-alive"
+  						},
+  						{
+  							"key": "Vary",
+  							"value": "Accept-Encoding"
+  						},
+  						{
+  							"key": "X-Powered-By",
+  							"value": "PHP/8.1.9"
+  						},
+  						{
+  							"key": "Cache-Control",
+  							"value": "no-cache, private"
+  						},
+  						{
+  							"key": "Date",
+  							"value": "Tue, 03 Jan 2023 10:53:22 GMT"
+  						},
+  						{
+  							"key": "X-RateLimit-Limit",
+  							"value": "60"
+  						},
+  						{
+  							"key": "X-RateLimit-Remaining",
+  							"value": "59"
+  						},
+  						{
+  							"key": "phpdebugbar-id",
+  							"value": "X27f6d47bbba30a75a9deb1fb49115066"
+  						},
+  						{
+  							"key": "Access-Control-Allow-Origin",
+  							"value": "*"
+  						},
+  						{
+  							"key": "Content-Encoding",
+  							"value": "gzip"
+  						}
+  					],
+  					"cookie": [],
+  					"body": "{\n    \"success\": true,\n    \"data\": [],\n    \"message\": \"Details submitted successfully! We’ll get back you shortly\"\n}"
+  				}
+  			]
+  		}
+  	]
+  }
+contentType: yaml

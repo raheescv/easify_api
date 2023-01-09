@@ -1,0 +1,33 @@
+_id: req_953d308e3cd3415186d598d3408321e8
+type: Request
+parentId: fld_3b724869b8cb4df7a21113f487273d8d
+modified: 1673243466271
+created: 1673243466271
+url: "{{URL}}/video/list"
+name: list
+description: ""
+method: POST
+body:
+  params:
+    - type: text
+      name: title
+      disabled: false
+      value: required
+    - type: text
+      name: type
+      disabled: false
+      value: "1"
+  mimeType: multipart/form-data
+parameters: []
+headers:
+  - name: Accept
+    value: application/json
+authentication: {}
+metaSortKey: -1673243466271
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

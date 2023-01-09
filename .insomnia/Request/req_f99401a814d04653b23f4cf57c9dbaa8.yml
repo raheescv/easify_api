@@ -1,0 +1,33 @@
+_id: req_f99401a814d04653b23f4cf57c9dbaa8
+type: Request
+parentId: fld_8b47f4025dfc455f957cae9e30629f91
+modified: 1673243732074
+created: 1673243732074
+url: "{{URL}}/video/delete"
+name: delete
+description: ""
+method: POST
+body:
+  params:
+    - type: text
+      name: id
+      disabled: false
+      value: "2"
+  mimeType: multipart/form-data
+parameters: []
+headers:
+  - name: Accept
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1673243732074
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,33 @@
+_id: req_6b788e12525249f4b62e85a170420fb7
+type: Request
+parentId: fld_d8c800e8926a41b19f5bbabffbffa8ec
+modified: 1673243732070
+created: 1673243732070
+url: "{{URL}}/client/delete"
+name: delete
+description: ""
+method: POST
+body:
+  params:
+    - type: text
+      name: id
+      disabled: false
+      value: "1"
+  mimeType: multipart/form-data
+parameters: []
+headers:
+  - name: Accept
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1673243732070
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

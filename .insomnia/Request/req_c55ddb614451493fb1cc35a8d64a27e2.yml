@@ -1,0 +1,45 @@
+_id: req_c55ddb614451493fb1cc35a8d64a27e2
+type: Request
+parentId: fld_4348ad1611894ef7b583edc0d3b00ff7
+modified: 1673243732068
+created: 1673243732068
+url: "{{URL}}/contact-us"
+name: contact-us
+description: ""
+method: POST
+body:
+  params:
+    - type: text
+      name: name
+      disabled: false
+      value: "12"
+    - type: text
+      name: phone
+      disabled: false
+      value: "123"
+    - type: text
+      name: email
+      disabled: false
+      value: rahees@iocd.com
+    - type: text
+      name: help
+      disabled: false
+      value: "123"
+    - type: text
+      name: ""
+      disabled: false
+      value: "123"
+  mimeType: multipart/form-data
+parameters: []
+headers:
+  - name: Accept
+    value: application/json
+authentication: {}
+metaSortKey: -1673243732068
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

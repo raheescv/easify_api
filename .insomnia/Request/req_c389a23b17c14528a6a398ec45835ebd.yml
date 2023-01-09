@@ -1,0 +1,33 @@
+_id: req_c389a23b17c14528a6a398ec45835ebd
+type: Request
+parentId: fld_d1110458b61d4a9f980b3967019686aa
+modified: 1673243466273
+created: 1673243466273
+url: "{{URL}}/login"
+name: login
+description: ""
+method: POST
+body:
+  params:
+    - type: text
+      name: email
+      disabled: false
+      value: admin@iocod.com
+    - type: text
+      name: password
+      disabled: false
+      value: admin@iocod.com
+  mimeType: multipart/form-data
+parameters: []
+headers:
+  - name: Accept
+    value: application/json
+authentication: {}
+metaSortKey: -1673243466273
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

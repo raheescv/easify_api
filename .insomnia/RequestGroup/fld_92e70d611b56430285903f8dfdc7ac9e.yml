@@ -1,0 +1,13 @@
+_id: fld_92e70d611b56430285903f8dfdc7ac9e
+type: RequestGroup
+parentId: wrk_ba6b7839eb0f4e82b5882f7a79872305
+modified: 1673244900527
+created: 1673243466274
+name: easify
+description: ""
+environment:
+  URL: https://easify.test/api
+environmentPropertyOrder:
+  "&":
+    - URL
+metaSortKey: -1673243466274

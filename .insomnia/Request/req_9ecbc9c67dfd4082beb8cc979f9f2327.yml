@@ -1,0 +1,41 @@
+_id: req_9ecbc9c67dfd4082beb8cc979f9f2327
+type: Request
+parentId: fld_d8c800e8926a41b19f5bbabffbffa8ec
+modified: 1673243732072
+created: 1673243732072
+url: "{{URL}}/client/store"
+name: store
+description: ""
+method: POST
+body:
+  params:
+    - type: text
+      name: name
+      disabled: false
+      value: " required"
+    - type: text
+      name: email
+      disabled: false
+      value: " required@gmail.com111"
+    - type: text
+      name: password
+      disabled: false
+      value: " required"
+  mimeType: multipart/form-data
+parameters: []
+headers:
+  - name: Accept
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1673243732072
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,16 @@
+_id: env_fc4e35578838af5f0009ce61c8e7441f2e778ab6
+type: Environment
+parentId: wrk_ba6b7839eb0f4e82b5882f7a79872305
+modified: 1673243649497
+created: 1673243435100
+name: Base Environment
+data:
+  URL: https://easify.test/api
+  token: 5|d3QQiVlCMR6x6qormtUWJyrNBbgP410NoeH8bLA6
+dataPropertyOrder:
+  "&":
+    - URL
+    - token
+color: null
+isPrivate: false
+metaSortKey: 1673243435100
